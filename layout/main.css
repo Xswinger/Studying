@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.toolbar {
+    display: inline;
+    padding: 2vh;
+}
+
+.top-toolbar-button {
+    color: white;
+    padding: 2px 2px 2px 2px;
+    border: 0px;
+}
+
+.top-toolbar button:nth-of-type(1) {
+    background-color: red;
+}
+
+.top-toolbar button:nth-of-type(2) {
+    background-color: green;
+}
+
+.top-toolbar button:nth-of-type(3) {
+    background-color: blue;
+}
+
+.toolbar-button {
+
+}
+
+.main-button {
+
+}
+
+.toolbar-menu-item {
+    color: white;
+}
+
+.top-toolbar {
+    height: 6vh;
+}
+
+.bottom-toolbar {
+    height: 6vh;
+    background-color: gray;
+}
+
+.preview {
+    background-image: url("img/image.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.preview h1, span {
+    color: white;
+}
+
+.preview button {
+    background-color: white;
+    color: black;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.projects {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+}
+
+.advantages {
+    background-color: black;
+}
+
+.advantages span {
+    display: flex;
+    justify-content: center;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+.advantages span {
+    color: white;
+}
