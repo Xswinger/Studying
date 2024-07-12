@@ -1,3 +1,8 @@
+.logo {
+    width: 15vw;
+    height: 3vw;
+}
+
 body {
     background-color: black;
     display: flex;
@@ -6,7 +11,8 @@ body {
 }
 
 .toolbar {
-    display: inline;
+    display: flex;
+    justify-content: space-between;
     padding: 2vh;
 }
 
@@ -28,16 +34,18 @@ body {
     background-color: blue;
 }
 
-.toolbar-button {
-
-}
-
-.main-button {
+.top-toolbar div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .toolbar-menu-item {
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .top-toolbar {
@@ -50,7 +58,7 @@ body {
 }
 
 .preview {
-    background-image: url("img/image.png");
+    background-image: url("resources/img/preview.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -61,8 +69,8 @@ body {
     justify-content: center;
 }
 
-.preview h1, span {
-    color: white;
+.preview-title {
+    padding-left: 10vw;
 }
 
 .preview button {
@@ -72,17 +80,12 @@ body {
     border-radius: 5px;
 }
 
-.projects {
-    background-color: white;
-    height: 100vh;
-    display: flex;
-}
-
 .advantages {
-    background-color: black;
+    padding: 5%;
+    padding: 5%;
 }
 
-.advantages span {
+h1, h3 {
     display: flex;
     justify-content: center;
 }
@@ -91,9 +94,144 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    grid-row-gap: 20%;
+    justify-items: center;
+    align-items: center;
+}
+
+.section-header {
+    margin-bottom: 5%;
+}
+
+.advantages-background {
+    background-color: white;
+    border-radius: 10%;
+    padding: 5%;
+    display: flex;
+}
+
+.advantages-grid > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages-background img {
+    width: 6vw;
+    height: 6vw;
+}
+
+.request {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.request:first {
+    background-image: url("resources/img/request_1.png");
+}
+
+.request {
+    background-image: url("resources/img/request_2.png");
+}
+
+.form {
+    background-color: gray;
+    border-radius: 5%;
+    padding: 3%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form input {
+    border-radius: 10%;
+}
+
+.reasons > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 5%;
     justify-items: center;
 }
 
-.advantages span {
-    color: white;
+.reasons img {
+    width: 16vw;
+    height: 12vw;
+    border-radius: 10%;
+}
+
+.reason-panel {
+    background-color: rgb(245, 245, 245);
+    border-radius: 10%;
+    padding: 4%;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.types > div {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: row;
+}
+
+.types img {
+    width: 16vw;
+    height: 16vw;
+    border-radius: 10%;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8%;
+}
+
+.contacts img {
+    height: 28vw;
+    width: 31vw;
+}
+
+.footer {
+    padding: 5%;
+}
+
+.footer > div {
+    padding: 3% 0 3% 0;
+}
+
+.footer > div:last-child {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid white;
+}
+
+.topics {
+    display: flex;
+    justify-content: space-around;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
 }

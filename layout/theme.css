@@ -1,0 +1,15 @@
+.dark-section {
+    background-color: black;
+}
+
+.dark-section h1, .dark-section h3, .dark-section h4, .dark-section span {
+    color: white;
+}
+
+.light-section {
+    background-color: white;
+}
+
+.light-section h1, .light-section h3, .light-section h4, .light-section span {
+    color: black;
+}
